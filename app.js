@@ -7,6 +7,7 @@ const EMERGENCY_GUIDES = {
     icon: '🛞',
     title: 'Flat Tire Replacement & Safety Guide',
     meta: 'Time: ~15-20 min • Safety: Level ground required',
+    videoUrl: 'https://www.youtube.com/watch?v=joBmbH0AGSQ',
     steps: [
       {
         title: 'Pull Over Safely & Secure the Car',
@@ -39,6 +40,7 @@ const EMERGENCY_GUIDES = {
     icon: '🔋',
     title: 'Dead Battery Diagnosis & Jumper Cable Guide',
     meta: 'Time: ~10 min • Requires: Jumper cables & donor car',
+    videoUrl: 'https://www.youtube.com/watch?v=0hY5P7mZ3eA',
     steps: [
       {
         title: 'Diagnose the Starter Symptom',
@@ -76,6 +78,7 @@ const EMERGENCY_GUIDES = {
     icon: '🌡️',
     title: 'Engine Overheating & Steam Protocol',
     meta: 'Time: 20-30 min wait • High Scald Hazard',
+    videoUrl: 'https://www.youtube.com/results?search_query=how+to+fix+overheating+car+emergency+roadside',
     steps: [
       {
         title: 'Pull Over Immediately & Shut Off Engine',
@@ -103,6 +106,7 @@ const EMERGENCY_GUIDES = {
     icon: '🔥',
     title: 'Smoke or Burning Odor Emergency Response',
     meta: 'Immediate Action Required • High Hazard',
+    videoUrl: 'https://www.youtube.com/results?search_query=car+engine+smoking+what+to+do+emergency',
     steps: [
       {
         title: 'Turn Off Ignition & Evacuate Passengers',
@@ -125,6 +129,7 @@ const EMERGENCY_GUIDES = {
     icon: '🛑',
     title: 'Spongy or Failing Brakes Emergency Procedure',
     meta: 'Moving Vehicle Emergency • Immediate Technique',
+    videoUrl: 'https://www.youtube.com/results?search_query=what+to+do+if+brakes+fail+while+driving',
     steps: [
       {
         title: 'Rapidly Pump the Brake Pedal',
@@ -152,6 +157,7 @@ const EMERGENCY_GUIDES = {
     icon: '⛽',
     title: 'Out of Fuel / Engine Misfire Protocol',
     meta: 'Time: ~10 min • Highway safety',
+    videoUrl: 'https://www.youtube.com/results?search_query=what+to+do+if+car+runs+out+of+gas+on+highway',
     steps: [
       {
         title: 'Coast Safely to the Road Shoulder',
@@ -301,6 +307,7 @@ function initScenarioCards() {
   const guideStepsContainer = document.getElementById('guideStepsContainer');
   const closeGuideBtn = document.getElementById('closeGuideBtn');
   const readAloudBtn = document.getElementById('readAloudBtn');
+  const videoTutorialBtn = document.getElementById('videoTutorialBtn');
 
   cards.forEach(card => {
     card.addEventListener('click', () => {
@@ -311,6 +318,9 @@ function initScenarioCards() {
       guideIcon.textContent = data.icon;
       guideTitle.textContent = data.title;
       guideTime.textContent = data.meta;
+      if (videoTutorialBtn && data.videoUrl) {
+        videoTutorialBtn.href = data.videoUrl;
+      }
 
       guideStepsContainer.innerHTML = data.steps.map((s, index) => `
         <div class="step-card">
