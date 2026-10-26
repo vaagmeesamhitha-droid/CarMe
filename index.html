@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>AutoResQ — Dad's Roadside Emergency Care • Powered by Sarvam AI</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>AutoResQ — Emergency Roadside Diagnostics • Powered by Sarvam AI</title>
+  <link rel="stylesheet" href="styles.css?v=2.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
           <span class="light green"></span>
         </div>
         <div class="brand-text">
-          <h1>AutoResQ <span class="badge-dad">👨‍🦳 Dad's Care</span></h1>
+          <h1>AutoResQ <span class="brand-cone">🚧</span></h1>
           <span class="brand-sub">Roadside Emergency Co-Pilot • Powered by Sarvam AI</span>
         </div>
       </div>
@@ -36,14 +36,14 @@
     </div>
   </header>
 
-  <!-- Reassuring Dad Advice Banner -->
-  <section class="dad-reassurance-banner">
+  <!-- Immediate Safety Reassurance Bar -->
+  <section class="reassurance-banner">
     <div class="banner-content">
-      <div class="dad-quote">
-        <span class="dad-emoji">👨‍🦳</span>
+      <div class="banner-quote">
+        <div class="banner-badge-icon">🛡️</div>
         <div>
-          <strong>"Don't worry beta, take a deep breath. Dad is right here."</strong>
-          <p>Cars can be fixed. You come first. Follow these 4 quick safety steps before touching anything:</p>
+          <strong>Stay calm and safe — we'll help you diagnose and fix this step-by-step.</strong>
+          <p>Cars can be repaired, but your safety is first. Follow these 4 immediate precautions:</p>
         </div>
       </div>
       <div class="safety-chips">
@@ -62,9 +62,9 @@
       <div class="section-header">
         <div class="traffic-badge-row">
           <span class="traffic-icon">🚦</span>
-          <h2>What's troubling the car, kiddo?</h2>
+          <h2>What happened to your vehicle?</h2>
         </div>
-        <p>Pick what went wrong below. I'll walk you through fixing it step-by-step!</p>
+        <p>Select your emergency below for instant, step-by-step roadside fix instructions</p>
       </div>
 
       <div class="scenarios-grid">
@@ -78,7 +78,7 @@
           <div class="card-info">
             <div class="tag-row"><span class="badge-tag red-tag">STOP & SWAP</span></div>
             <h3>Flat Tire / Puncture</h3>
-            <p>Spare tire swap, jacking safety & dad's lug nut trick</p>
+            <p>Spare tire swap, jacking safety & easy lug nut leverage</p>
           </div>
           <span class="card-arrow">→</span>
         </button>
@@ -93,7 +93,7 @@
           <div class="card-info">
             <div class="tag-row"><span class="badge-tag yellow-tag">CHECK JUICE</span></div>
             <h3>Won't Start / Dead Battery</h3>
-            <p>Jumper cable color order & clicking starter check</p>
+            <p>Jumper cable color sequence & clicking starter check</p>
           </div>
           <span class="card-arrow">→</span>
         </button>
@@ -108,7 +108,7 @@
           <div class="card-info">
             <div class="tag-row"><span class="badge-tag red-tag">DON'T TOUCH CAP</span></div>
             <h3>Engine Overheating / Steam</h3>
-            <p>Cool-down wait, safe coolant refill & scald warning</p>
+            <p>Cool-down wait, safe coolant refill & scald protection</p>
           </div>
           <span class="card-arrow">→</span>
         </button>
@@ -174,8 +174,8 @@
           </div>
         </div>
         <div class="guide-controls">
-          <button id="readAloudBtn" class="btn btn-dad-voice">
-            🔊 Listen to Dad's Voice
+          <button id="readAloudBtn" class="btn btn-blue">
+            🔊 Listen to Audio Guide
           </button>
           <button id="closeGuideBtn" class="btn btn-text">✕ Close</button>
         </div>
@@ -186,7 +186,7 @@
       </div>
     </section>
 
-    <!-- AI Diagnostic Chat Section (Dad Persona + Sarvam 105B) -->
+    <!-- AI Diagnostic Chat Section (Powered by Sarvam 105B) -->
     <section class="ai-chat-section">
       <div class="section-header ai-header">
         <div class="ai-title-wrap">
@@ -195,7 +195,7 @@
             <span class="light yellow"></span>
             <span class="light green"></span>
           </div>
-          <h2>Ask Dad: Sarvam AI Diagnostic Chat</h2>
+          <h2>Sarvam AI Emergency Diagnostic Chat</h2>
         </div>
         <p>Type or speak what you hear, smell, or see. Speaks English, Hindi, and Indian regional languages!</p>
       </div>
@@ -203,10 +203,10 @@
       <div class="chat-container">
         <div id="chatHistory" class="chat-history">
           <div class="chat-message bot-message">
-            <div class="msg-avatar">👨‍🦳</div>
+            <div class="msg-avatar">🤖</div>
             <div class="msg-body">
-              <p><strong>"Hey beta, don't worry at all! Dad's got your back."</strong></p>
-              <p>Tell me what happened with the car — is there a strange noise, a warning light on the dashboard, or did it shut down suddenly? Tap the microphone or click one of the common issues below:</p>
+              <p><strong>"AutoResQ Emergency Assistant ready. Don't worry, we will help you figure this out."</strong></p>
+              <p>Tell me what happened with your car — is there a strange noise, a warning light on the dashboard, or did it shut down suddenly? Tap the microphone or click one of the quick options below:</p>
               <div class="quick-chips">
                 <button class="chip-btn" data-text="Car suddenly shut off while driving and won't restart">Car died while driving</button>
                 <button class="chip-btn" data-text="Key turns and starter makes a rapid click-click-click sound">Rapid clicking on start</button>
@@ -218,12 +218,12 @@
         </div>
 
         <form id="chatForm" class="chat-input-bar">
-          <button type="button" id="voiceInputBtn" class="btn-voice" title="Speak to Dad (Voice Input)">
+          <button type="button" id="voiceInputBtn" class="btn-voice" title="Speak your issue (Voice Input)">
             🎙️
           </button>
-          <input type="text" id="userInput" placeholder="Tell Dad what happened (e.g. 'engine is making a rattling noise')..." autocomplete="off">
+          <input type="text" id="userInput" placeholder="Describe what happened (e.g. 'engine is making a rattling noise')..." autocomplete="off">
           <button type="submit" id="sendBtn" class="btn btn-primary">
-            <span>Ask Dad</span> ➤
+            <span>Send</span> ➤
           </button>
         </form>
       </div>
@@ -236,7 +236,7 @@
           <span class="traffic-icon">🚦</span>
           <h2>Nearby Help & Towing Radar</h2>
         </div>
-        <p>Let's scan your live location so you know exactly who can help you nearby</p>
+        <p>Scan your live location to find immediate roadside assistance around you</p>
       </div>
 
       <div class="location-banner">
@@ -337,7 +337,7 @@
     </div>
   </div>
 
-  <!-- Settings Modal (Sarvam API Key) -->
+  <!-- Neat Settings Pop-up Modal -->
   <div id="settingsModal" class="modal hidden">
     <div class="modal-backdrop"></div>
     <div class="modal-box">
@@ -346,7 +346,7 @@
         <button id="closeSettingsBtn" class="btn-close">✕</button>
       </div>
       <div class="modal-body">
-        <p>Enter your <strong>Sarvam AI API Key</strong> to connect Dad's Brain to the <code>sarvam-105b-conversations</code> model. Key is kept private in your browser's <code>localStorage</code>.</p>
+        <p>Enter your <strong>Sarvam AI API Key</strong> to connect to the <code>sarvam-105b-conversations</code> model. Key is kept private in your browser's <code>localStorage</code>.</p>
         
         <div class="form-group">
           <label for="apiKeyInput">Sarvam API Key:</label>
@@ -374,11 +374,11 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
-      <p>AutoResQ • Dad's Roadside Emergency Care • Powered by Sarvam AI</p>
-      <p class="disclaimer">Remember beta: always stay off the highway lanes, keep your hazard lights blinking, and call 112 or 1033 if you feel unsafe.</p>
+      <p>AutoResQ • Emergency Roadside Diagnostics • Powered by Sarvam AI</p>
+      <p class="disclaimer">Safety Reminder: Always stay off the highway lanes, keep your hazard lights blinking, and call 112 or 1033 if you feel unsafe.</p>
     </div>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=2.0"></script>
 </body>
 </html>

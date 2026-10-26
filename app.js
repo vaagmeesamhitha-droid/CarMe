@@ -1,198 +1,198 @@
-// AutoResQ — Dad's Roadside Emergency Care
+// AutoResQ — Roadside Emergency Diagnostics & Assistant
 // Powered by Sarvam AI (sarvam-105b-conversations)
 
-// --- Homely Dad Roadside Emergency Guides ---
+// --- Step-by-Step Emergency Guides ---
 const EMERGENCY_GUIDES = {
   puncture: {
     icon: '🛞',
-    title: 'Dad\'s Step-by-Step Flat Tire Replacement Guide',
-    meta: 'Time: ~15-20 min • "Don\'t rush beta, work smart, not hard!"',
+    title: 'Flat Tire Replacement & Safety Guide',
+    meta: 'Time: ~15-20 min • Safety: Level ground required',
     steps: [
       {
-        title: 'Pull Over & Keep Yourself Safe First',
-        desc: 'Alright beta, first take a deep breath. Switch on your hazard lights so speeding cars can spot you. Pull as far onto the flat shoulder as possible. Put the car in Park (or 1st gear for manual), and pull the handbrake all the way up firmly!',
-        warning: 'Never ever change a tire on a slope or soft mud, beta. The car can slide right off the jack!'
+        title: 'Pull Over Safely & Secure the Car',
+        desc: 'Take a deep breath. Switch on your hazard lights so approaching vehicles can spot you from afar. Pull as far onto the flat shoulder as possible. Shift into Park (or 1st gear for manual), and pull the handbrake all the way up firmly!',
+        warning: 'Never change a tire on a slope or soft mud. The car can slide off the jack!'
       },
       {
-        title: 'Dad\'s Secret: Loosen the Lug Nuts BEFORE Jacking Up',
-        desc: 'Grab the L-shaped wrench from your boot. Fit it on the lug nuts and turn counter-clockwise (Remember: Left = Loose, Right = Tight). If a nut is jammed tight, don\'t hurt your back — just place the wrench horizontally and step on it gently with your heel! Loosen each nut by one full turn, but don\'t take them off yet.',
-        warning: 'Keep the wheel firmly on the road while loosening, otherwise the wheel will just spin uselessly in the air.'
+        title: 'Pro Tip: Loosen the Lug Nuts BEFORE Jacking Up',
+        desc: 'Take the L-shaped wrench from your boot. Fit it onto each lug nut and turn counter-clockwise (Left = Loose, Right = Tight). If a nut is stuck tight, don\'t strain your back — place the wrench horizontally and step on it gently with your heel! Loosen each nut by one full turn, but keep them on for now.',
+        warning: 'Keep the tire firmly on the ground while breaking the nuts loose, otherwise the wheel will just spin in the air.'
       },
       {
         title: 'Position the Jack Under the Pinch Weld Notch',
-        desc: 'Peek underneath near the flat tire. You will feel a small reinforced metal groove/notch along the frame. Place the jack head right into that notch. Now start turning the jack handle until the flat tire lifts about 2 to 3 inches off the ground.',
-        warning: 'Careful beta! Never position the jack against the flat plastic body panel underneath — it will crack the plastic!'
+        desc: 'Look underneath near the flat tire for a small reinforced metal groove/notch along the frame. Place the jack head right into that notch. Slowly turn the jack handle until the flat tire lifts about 2 to 3 inches off the ground.',
+        warning: 'Never position the jack against the flat plastic body panel underneath — it will crack the panel!'
       },
       {
         title: 'Swap with the Spare Tire',
-        desc: 'Unscrew the loosened lug nuts with your fingers now and set them in a clean spot so they don\'t roll away. Slide the flat tire off and mount the spare tire. Screw all the nuts back on by hand until they feel snug against the wheel.',
-        warning: 'Don\'t push or shake the car while it\'s balancing on the jack. Easy does it!'
+        desc: 'Unscrew the loosened lug nuts with your fingers and place them in a clean spot. Slide the flat tire off and mount the spare tire. Screw all the nuts back on by hand until snug against the wheel.',
+        warning: 'Do not shake or push the car while it is elevated on the jack. Easy does it!'
       },
       {
         title: 'Lower the Car & Tighten in a Star Pattern',
-        desc: 'Turn the jack to lower the car back onto the ground. Now use the wrench to give every lug nut a strong final tighten. Always tighten in a criss-cross star pattern (across from each other, not in a circle) so the wheel sits flush and true.',
-        warning: 'Remember kiddo, if it\'s a small temporary donut spare, drive under 80 km/h until you visit a puncture shop!'
+        desc: 'Lower the car back down onto the ground. Use the wrench to firmly tighten each lug nut. Always tighten in a criss-cross star pattern (across from each other, not in a circle) so the wheel mounts evenly.',
+        warning: 'If you installed a temporary donut spare tire, keep your speed under 80 km/h until you visit a puncture shop!'
       }
     ]
   },
   battery: {
     icon: '🔋',
-    title: 'Dad\'s Dead Battery & Jumper Cable Guide',
-    meta: 'Time: ~10 min • "Happens to the best of us, beta. We\'ll jump it!"',
+    title: 'Dead Battery Diagnosis & Jumper Cable Guide',
+    meta: 'Time: ~10 min • Requires: Jumper cables & donor car',
     steps: [
       {
-        title: 'Listen to the Car\'s Complaint',
-        desc: 'Turn the key and listen closely. Do you hear a rapid "click-click-click"? That means the battery has a little charge left, but not enough power to spin the starter. If you hear dead silence and the dashboard lights dim out completely, the battery is totally drained or the terminals are loose.',
-        warning: 'Make sure both vehicles have their engines and headlights switched OFF before touching any cables.'
+        title: 'Diagnose the Starter Symptom',
+        desc: 'Turn the key and listen closely. If you hear a rapid "click-click-click", the battery has a little power left but lacks the amps to crank the starter. If you hear dead silence and dashboard lights dim completely, the battery is fully drained or the terminals are loose.',
+        warning: 'Ensure both cars have their engines and headlights switched OFF before connecting any cables.'
       },
       {
-        title: 'Red to Dead Positive (+)',
-        desc: 'Take the RED jumper cable clamp. Attach it firmly onto the POSITIVE (+) terminal of your dead battery. Look for the little red plastic cover or the "+" sign stamped into the battery plastic.',
+        title: 'Red to Dead Battery Positive (+)',
+        desc: 'Take the RED jumper cable clamp. Attach it firmly onto the POSITIVE (+) terminal of your dead battery. Look for the red plastic cap or the "+" marking on the battery casing.',
         warning: 'Rule number one with jumper cables: NEVER let the red and black clamp heads touch each other!'
       },
       {
-        title: 'Red to Donor Positive (+)',
-        desc: 'Now walk over to the helping car. Clamp the other RED end onto the POSITIVE (+) terminal of the good battery. Make sure the metal teeth bite down well through any grime.',
-        warning: 'Double check: RED is always POSITIVE. Don\'t mix them up!'
+        title: 'Red to Donor Battery Positive (+)',
+        desc: 'Walk over to the booster car. Clamp the other RED end onto the POSITIVE (+) terminal of the good battery. Ensure clean metal contact through any grime.',
+        warning: 'Double check: RED is always POSITIVE (+).'
       },
       {
-        title: 'Black to Donor Negative (-)',
-        desc: 'Clamp one BLACK cable head onto the NEGATIVE (-) terminal of the good battery.',
-        warning: 'Watch out for radiator fans and engine belts — keep cables dangling clear.'
+        title: 'Black to Donor Battery Negative (-)',
+        desc: 'Clamp one BLACK cable head onto the NEGATIVE (-) terminal of the booster car\'s good battery.',
+        warning: 'Watch out for engine belts and radiator fans — keep cables hanging clear.'
       },
       {
-        title: 'Black to Bare Metal on Your Car (NOT the Dead Battery!)',
-        desc: 'Now for the other BLACK clamp: DO NOT attach it to the dead battery\'s negative terminal! Instead, clamp it onto an unpainted shiny metal bolt or bracket on your car\'s engine block.',
-        warning: 'Batteries release tiny hydrogen vapors when draining. Attaching to bare metal prevents any sparks from causing a pop!'
+        title: 'Black to Bare Metal on Dead Car (NOT the Dead Battery!)',
+        desc: 'For the other BLACK clamp: DO NOT attach it to the dead battery\'s negative terminal. Instead, clamp it onto an unpainted metal bracket or bolt on your car\'s engine block.',
+        warning: 'Attaching to bare engine metal prevents any tiny sparks from igniting battery vapors.'
       },
       {
-        title: 'Start the Good Car First, Then Yours!',
-        desc: 'Start the helping car and let it run for 3 minutes to send some juice over. Now try starting your car. Once your engine revs up happily, remove the cables in the EXACT REVERSE order! Keep your car running for at least 30 minutes so the alternator charges it up.',
-        warning: 'Don\'t turn your car off immediately after jumping it, or you\'ll have to jump it all over again!'
+        title: 'Start the Good Car First, Then Yours',
+        desc: 'Start the booster car and let it run for 3 minutes to send charge over. Now start your vehicle. Once running, disconnect cables in the EXACT REVERSE order! Keep your engine running for at least 30 minutes to recharge.',
+        warning: 'Do not shut off your car right after jump-starting, or the alternator won\'t have time to recharge the battery.'
       }
     ]
   },
   overheat: {
     icon: '🌡️',
-    title: 'Dad\'s Overheating & Steam Safety Protocol',
-    meta: 'Time: 20-30 min wait • "Patience beta, do not touch that cap!"',
+    title: 'Engine Overheating & Steam Protocol',
+    meta: 'Time: 20-30 min wait • High Scald Hazard',
     steps: [
       {
-        title: 'Pull Over Right Now & Turn the Engine OFF!',
-        desc: 'Whoa, look at that temperature gauge in the red zone! Put your hazards on, pull safely onto the shoulder, and switch the ignition OFF immediately. Driving an overheated engine for even 2 minutes can warp the engine head and blow a head gasket!',
-        warning: 'Life of your engine is at stake here. Do not try to "limp" it home while it is in the red zone.'
+        title: 'Pull Over Immediately & Shut Off Engine',
+        desc: 'If the temperature needle hits the red zone or steam rises from the hood, switch your hazard lights on, pull safely onto the shoulder, and turn the engine OFF right away. Driving an overheated engine can warp the cylinder head in minutes!',
+        warning: 'Do not attempt to limp the car to a far away station while the temperature gauge is pinned in the red zone.'
       },
       {
-        title: 'DO NOT Open That Radiator Cap, Beta!',
-        desc: 'Listen to dad on this: that boiling radiator is under intense pressure right now. If you twist that metal cap, superheated steam and scalding coolant will explode out all over your face and hands! Your mom and I would be horrified. Step back and sit in the shade for 20-30 minutes.',
-        warning: 'Seriously kiddo, keep your hands off the radiator cap until the hood is completely cool to the touch.'
+        title: 'DO NOT Open the Radiator Cap While Hot!',
+        desc: 'The cooling system is under boiling pressure. If you twist that metal cap open, superheated steam and scalding coolant will erupt like a geyser. Step back and wait 20-30 minutes until the hood is cool to the touch.',
+        warning: 'Wait until the engine is completely cool before attempting to inspect the radiator.'
       },
       {
-        title: 'Inspect the Plastic Expansion Tank & Ground',
-        desc: 'Once the hiss stops and it cools down, look underneath the front bumper. Do you see a puddle of bright green, pink, or orange water? That means a rubber hose split or the water pump gave out.',
-        warning: 'Never pour freezing cold water directly into a scorching hot engine — the sudden temperature drop can crack the iron block!'
+        title: 'Inspect the Coolant Reservoir & Ground',
+        desc: 'Look underneath the front bumper. If you see a puddle of bright green, orange, or pink liquid, a radiator hose has split or the water pump is leaking.',
+        warning: 'Never pour ice-cold water directly into a hot engine — the thermal shock can crack the iron block!'
       },
       {
-        title: 'Top Up with Clean Drinking Water or Coolant',
-        desc: 'Once the engine feels barely warm to the touch, slowly open the transparent plastic coolant overflow tank. Pour in coolant or plain clean drinking water to reach the "MAX" line. If the water leaks right out onto the floor, call a tow truck.',
-        warning: 'While driving slowly to the nearest garage, keep your AC off and blast the cabin heater to full — it pulls heat away from the engine!'
+        title: 'Top Up Coolant or Clean Water',
+        desc: 'Once cooled, slowly open the transparent plastic expansion tank and top up with coolant or clean drinking water to the MAX line. If liquid immediately pours out the bottom, call a tow truck.',
+        warning: 'If you must drive a short distance to a garage, turn the AC off and blast the cabin heater to maximum to help bleed engine heat.'
       }
     ]
   },
   smoke: {
     icon: '🔥',
-    title: 'Dad\'s Smoke & Burning Odor Emergency Response',
-    meta: 'Immediate Action Required • "Safety first, metal can be replaced!"',
+    title: 'Smoke or Burning Odor Emergency Response',
+    meta: 'Immediate Action Required • High Hazard',
     steps: [
       {
-        title: 'Turn Off Ignition & Get Everyone Out of the Car!',
-        desc: 'Pull over immediately away from dry bushes or tall grass. Turn off the ignition key, unbuckle everybody, and get all passengers out and behind the roadside guardrail at least 30 meters away.',
-        warning: 'Never sit inside a vehicle that smells like burning electrical wire or fuel. Your safety is 100x more important than the car!'
+        title: 'Turn Off Ignition & Evacuate Passengers',
+        desc: 'Pull over immediately away from dry bushes or tall grass. Turn off the ignition key, unbuckle everybody, and move at least 30 meters away behind the road guardrail.',
+        warning: 'Your life and safety are the number one priority. Metal can always be repaired or replaced!'
       },
       {
-        title: 'What Does the Odor Smell Like?',
-        desc: 'Let\'s identify the scent from a safe distance:\n• Sweet syrup smell = Radiator coolant steam (not a fire).\n• Burning rubber/plastic = Electrical wire short or alternator belt slipping.\n• Thick blue smoke with burnt toast smell = Engine oil leaking onto hot exhaust pipe.',
-        warning: 'If you smell raw petrol/gasoline fumes, do not turn on any phone flashlights or lighters nearby.'
+        title: 'Identify the Scent from a Safe Distance',
+        desc: '• Sweet syrup smell = Radiator coolant steam (not fire).\n• Burning rubber/plastic = Electrical short or alternator belt friction.\n• Heavy acrid blue smoke = Engine oil dripping onto the hot exhaust pipe.',
+        warning: 'If you smell raw petrol/fuel, do not use lighters or open flames anywhere near the vehicle.'
       },
       {
-        title: 'Fire Caution Under the Hood',
-        desc: 'If you see wisps of smoke from the front, pop the hood latch from inside the cabin, but DO NOT fling the hood wide open! Rushing fresh oxygen can feed a small flame. If you have an extinguisher, aim through the front grille.',
-        warning: 'If you see actual red flames inside the engine bay, do NOT play hero! Dial 112 immediately and keep your distance.'
+        title: 'Handle Under-Hood Fire Precautions',
+        desc: 'If you see smoke coming from the front, pop the hood latch from inside the cabin, but DO NOT swing the hood fully open. A rush of fresh oxygen can fan an ember into flame. Aim fire extinguisher through the grille.',
+        warning: 'If you see active flames inside the engine bay, do not attempt DIY firefighting. Dial 112 immediately!'
       }
     ]
   },
   brakes: {
     icon: '🛑',
-    title: 'Dad\'s Spongy or Failing Brakes Emergency Guide',
-    meta: 'Moving Vehicle Emergency • "Stay calm, grip the wheel, let\'s stop safely!"',
+    title: 'Spongy or Failing Brakes Emergency Procedure',
+    meta: 'Moving Vehicle Emergency • Immediate Technique',
     steps: [
       {
-        title: 'Start Rapidly Pumping the Brake Pedal!',
-        desc: 'If you step on the brake and it sinks all the way down to the carpet, don\'t panic! Start pumping the pedal hard and fast — pump, pump, pump! Most modern cars have dual hydraulic brake circuits, and fast pumping builds back up residual pressure.',
-        warning: 'Don\'t freeze up after just one push. Continuous hard pumping often gets you 25% braking power back!'
+        title: 'Rapidly Pump the Brake Pedal',
+        desc: 'If the brake pedal sinks down to the floor, start pumping the pedal hard and fast. Dual-circuit master cylinders often build back residual hydraulic pressure when pumped repeatedly.',
+        warning: 'Don\'t give up after one push. Continuous hard pumping can restore up to 25% braking force.'
       },
       {
-        title: 'Downshift Gears (Engine Braking)',
-        desc: 'Let the transmission do the hard work. In a manual car, shift down sequentially: 4th -> 3rd -> 2nd -> 1st. In an automatic car, slide the shifter into "L" (Low), "S" (Sport), or shift into Manual mode and tap the minus (-) gear.',
-        warning: 'Do not slam the gearbox into Reverse or Park while the car is flying down the road!'
+        title: 'Downshift Gears for Engine Braking',
+        desc: 'In a manual car, shift down sequentially: 4th -> 3rd -> 2nd -> 1st. In an automatic car, shift into "L" (Low) or Manual mode and tap downshift. Engine compression will rapidly slow the car.',
+        warning: 'Do not slam directly into Reverse or Park while the vehicle is traveling fast.'
       },
       {
         title: 'Gently Modulate the Handbrake',
-        desc: 'Hold down the little release button on your handbrake lever with your thumb so it doesn\'t lock, and slowly pull up on the lever. If you feel the back tires skid, ease off slightly, then pull again.',
-        warning: 'Never yank the handbrake up violently at 80 km/h, or the rear of the car will spin around like a top!'
+        desc: 'Hold down the handbrake release button with your thumb and pull up smoothly. If the rear tires begin to skid, release slightly, then modulate again.',
+        warning: 'Never jerk the handbrake violently at high speed, as this can cause the car to fishtail or spin.'
       },
       {
-        title: 'Steer onto the Incline or Gravel Shoulder',
-        desc: 'Flash your hazard lights, honk the horn to warn other cars, and guide the car onto the gravel shoulder, grass, or an uphill incline to scrub off speed. Turn off the key ONLY once the vehicle has come to a complete standstill.',
-        warning: 'Never turn off the ignition key while the car is rolling fast! On many cars, turning the key off locks the steering wheel!'
+        title: 'Steer onto Incline or Gravel Shoulder',
+        desc: 'Turn hazard lights on, honk your horn to alert others, and steer onto the gravel shoulder, grass, or an uphill incline to scrub off remaining speed. Switch off the key only after coming to a full stop.',
+        warning: 'Never turn the key off while traveling fast — turning off the key can lock the steering wheel on many cars!'
       }
     ]
   },
   fuel: {
     icon: '⛽',
-    title: 'Dad\'s Out of Fuel / Engine Misfire Protocol',
-    meta: 'Time: ~10 min • "Don\'t feel embarrassed, beta. Let\'s get you fuel!"',
+    title: 'Out of Fuel / Engine Misfire Protocol',
+    meta: 'Time: ~10 min • Highway safety',
     steps: [
       {
-        title: 'Coast Gently Off the Main Carriageway',
-        desc: 'When the engine stutters and dies from an empty tank, two things will happen immediately: the steering wheel will become heavy (power steering stops), and the brake pedal will feel hard. Grip the wheel firmly with both hands and coast smoothly onto the shoulder.',
-        warning: 'Push the brake pedal firmly with your whole leg — it will feel stiff without engine vacuum assist.'
+        title: 'Coast Safely to the Road Shoulder',
+        desc: 'When the engine runs out of fuel, power steering and brake boost will shut off. The steering wheel will feel heavy and the brake pedal will feel stiff. Grip the wheel firmly with both hands and coast smoothly onto the shoulder.',
+        warning: 'Push the brake pedal firmly with your whole leg — it requires more foot effort without engine vacuum assist.'
       },
       {
-        title: 'Locate the Nearest Petrol Pump Below',
-        desc: 'Tap the "Petrol / Diesel Pumps" button below to find the nearest station. If you are on a National Highway, call NHAI (1033) — highway patrol vans often carry emergency 5-liter fuel cans!',
-        warning: 'Never use old plastic water bottles or unapproved containers to carry petrol — it\'s a major fire hazard.'
+        title: 'Locate Nearest Fuel Station Below',
+        desc: 'Tap the "Petrol / Diesel Pumps" button below to find the closest fuel station. On National Highways, dial 1033 — patrol vehicles often carry emergency fuel supplies.',
+        warning: 'Never use unapproved plastic soda bottles or open containers to carry fuel.'
       },
       {
-        title: 'For Diesel Cars: The Priming Trick',
-        desc: 'If your car is a Diesel, running dry pulls air into the fuel rail. After adding fresh diesel, turn the ignition key to "ON" (lights turn on, but don\'t crank) 4 or 5 times for 10 seconds each. This lets the electric lift pump push out all the air bubbles.',
-        warning: 'Don\'t crank a diesel engine continuously with air in the lines, or you will drain the starter battery.'
+        title: 'Diesel Priming Procedure',
+        desc: 'If your car is a Diesel, running dry introduces air into the fuel lines. After refilling, turn the ignition key to ON (without cranking) 4 to 5 times for 10 seconds each to let the electric lift pump purge air bubbles.',
+        warning: 'Avoid continuous starter cranking on an empty diesel line, as it drains the battery.'
       }
     ]
   }
 };
 
-// --- Offline Reassuring Dad Fallback Knowledge for AI Chat ---
-const OFFLINE_DAD_DIAGNOSTICS = [
+// --- Offline Emergency Fallback Knowledge for AI Chat ---
+const OFFLINE_DIAGNOSTICS = [
   {
     triggers: ['click', 'won\'t start', 'starter', 'crank', 'battery', 'dead'],
-    response: `**"Hey beta, sounds like our starter battery is feeling weak."**\n\n1. **Take a peek under the hood**: Are the battery terminal clamps loose or covered in that chalky white-green powder? Sometimes a gentle wiggle on the clamp gets it running!\n2. **What does the noise tell us?**:\n   - Rapid *click-click-click*: The starter is begging for juice, but the battery doesn't have enough amps.\n   - Complete dead silence: Battery is 100% drained or a main fuse blew.\n3. **What to do**: Check out my **Dead Battery & Jumper Cable Guide** above! If you have jumper cables, we'll get you moving in 5 minutes.`
+    response: `**Diagnostic Assessment: Weak Battery or Starter Relay**\n\n1. **Check Battery Clamps**: Inspect under the hood to see if terminal clamps are loose or coated with white/green corrosion.\n2. **Sound Check**:\n   - Rapid *click-click-click*: Battery has low voltage, unable to turn the starter.\n   - Complete silence: Battery is completely drained or main fuse has blown.\n3. **Action**: Follow our **Dead Battery & Jumper Cable Guide** above. If you don't have cables, tap nearby mechanics below.`
   },
   {
     triggers: ['tire', 'tyre', 'puncture', 'flat', 'blowout', 'wobble'],
-    response: `**"Don't worry kiddo, flat tires happen all the time!"**\n\n1. **First step**: Hazards ON, pull onto flat, firm ground. Never jack up a car on soft dirt or a slope!\n2. **Look for the nail**: See if there's a nail or screw in the tread, or if the rim is sitting on the rubber.\n3. **Dad's plan**: Follow my **Flat Tire Guide** above step-by-step. If you don't have a spare wheel or a jack, tap **Tire Puncture Shops** below and I'll find a puncture guy near your exact spot!`
+    response: `**Diagnostic Assessment: Tire Pressure Loss / Puncture**\n\n1. **Safety First**: Pull over onto level, firm shoulder ground away from traffic. Turn hazard lights ON.\n2. **Inspect the Tire**: Look for nails, sidewall cracks, or rim damage.\n3. **Action**: Follow our **Flat Tire Replacement Guide** step-by-step. If you have no spare or jack, tap **Tire Puncture Shops** below to find nearby assistance.`
   },
   {
     triggers: ['heat', 'overheat', 'temperature', 'red', 'coolant', 'steam'],
-    response: `**"Whoa beta, stop the car right now! Engine heat is no joke!"**\n\n1. **Turn the engine off immediately**: Running hot for even 2 minutes will warp the engine cylinder head and cost a fortune.\n2. **DON'T TOUCH THE RADIATOR CAP**: I mean it! That steam is under pressure. Sit in the shade and drink some water for 25 minutes.\n3. **Check the ground**: Look for bright green or pink puddles underneath. Once cooled, we can top it up with clean drinking water to reach the nearest mechanic.`
+    response: `**Urgent Warning: Engine Overheating (High Risk)**\n\n1. **Stop Driving Immediately**: Turn off the engine right now to prevent cylinder head damage.\n2. **DO NOT OPEN RADIATOR CAP**: Wait at least 25 minutes for boiling steam pressure to dissipate.\n3. **Inspect**: Check for coolant puddles underneath. Once cooled, top up with coolant or clean water to reach a repair shop.`
   },
   {
     triggers: ['smoke', 'smell', 'fire', 'burn', 'plastic'],
-    response: `**"Beta, safety first! Get yourself and everyone out of the car right now!"**\n\n1. **Evacuate**: Turn off the key, step out, and move 30 meters away behind the guardrail. Metal can be replaced, you cannot.\n2. **What's the smell?**:\n   - Sweet maple syrup = Coolant steam.\n   - Burning plastic/rubber = Electrical short.\n   - Heavy oily smoke = Oil dripping on exhaust.\n3. **If you see flames**: Do NOT open the hood wide. Dial **112** immediately!`
+    response: `**Critical Alert: Potential Electrical or Thermal Hazard**\n\n1. **Evacuate**: Turn off ignition immediately, get all occupants out, and stand 30 meters away behind the guardrail.\n2. **Identify Odor**:\n   - Sweet syrup smell = Coolant steam.\n   - Burning plastic/rubber = Electrical short or belt slip.\n   - Acrid blue smoke = Oil leaking onto hot exhaust.\n3. **If flames are visible**: Dial **112** immediately. Do not attempt DIY firefighting.`
   },
   {
     triggers: ['brake', 'spongy', 'soft', 'stopping', 'pedal'],
-    response: `**"Okay kiddo, take a deep breath. Let's handle these brakes carefully."**\n\n1. **Pump that pedal**: Fast pumping builds back residual hydraulic pressure.\n2. **Downshift gears**: Let the engine compression slow down the car (engine braking).\n3. **Gently pull the handbrake**: Modulate it slowly so the back tires don't lock up.\n4. **Do NOT drive further**: Once stopped, call a flatbed tow truck from the Towing section below. Driving with failing brakes is strictly forbidden!`
+    response: `**Emergency Warning: Hydraulic Brake Pressure Loss**\n\n1. **Pump the Pedal**: Rapid, hard pumping can rebuild residual hydraulic pressure.\n2. **Downshift**: Shift into lower gears (4->3->2->1 or Low mode) for engine braking.\n3. **Handbrake**: Modulate gently while holding the release button.\n4. **Action**: Stop and do not drive further. Call a flatbed tow truck from our Towing section below.`
   }
 ];
 
@@ -242,21 +242,21 @@ function initSettings() {
     if (key) {
       localStorage.setItem('sarvam_api_key', key);
       localStorage.setItem('sarvam_model', modelSelect.value);
-      showStatus(statusMsg, 'Dad\'s Sarvam AI brain is connected and saved!', 'success');
+      showStatus(statusMsg, 'Sarvam AI key saved successfully in browser storage!', 'success');
       setTimeout(() => settingsModal.classList.add('hidden'), 1200);
     } else {
       localStorage.removeItem('sarvam_api_key');
-      showStatus(statusMsg, 'Key cleared. Dad will use his offline emergency knowledge base.', 'error');
+      showStatus(statusMsg, 'Key cleared. App will use offline emergency knowledge base.', 'error');
     }
   });
 
   testApiBtn.addEventListener('click', async () => {
     const key = apiKeyInput.value.trim();
     if (!key) {
-      showStatus(statusMsg, 'Please enter an API key to test, beta.', 'error');
+      showStatus(statusMsg, 'Please enter an API key to test.', 'error');
       return;
     }
-    showStatus(statusMsg, 'Connecting with Sarvam AI...', '');
+    showStatus(statusMsg, 'Testing connection with Sarvam AI...', '');
     try {
       const response = await fetch('https://api.sarvam.ai/v1/chat/completions', {
         method: 'POST',
@@ -265,7 +265,7 @@ function initSettings() {
           'api-subscription-key': key
         },
         body: JSON.stringify({
-          messages: [{ role: 'user', content: 'Say "Dad is ready" in 3 words.' }],
+          messages: [{ role: 'user', content: 'Say "Connection successful" in 2 words.' }],
           model: modelSelect.value || 'sarvam-105b-conversations',
           max_tokens: 15
         })
@@ -318,7 +318,7 @@ function initScenarioCards() {
           <div class="step-content">
             <h4>${escapeHtml(s.title)}</h4>
             <p>${escapeHtml(s.desc)}</p>
-            ${s.warning ? `<div class="step-warning">🛑 <strong>Dad's Warning:</strong> ${escapeHtml(s.warning)}</div>` : ''}
+            ${s.warning ? `<div class="step-warning">⚠️ <strong>Safety Warning:</strong> ${escapeHtml(s.warning)}</div>` : ''}
           </div>
         </div>
       `).join('');
@@ -327,7 +327,7 @@ function initScenarioCards() {
       guideSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
       readAloudBtn.onclick = () => {
-        speakDadGuide(data.title, data.steps);
+        speakGuideSteps(data.title, data.steps);
       };
     });
   });
@@ -338,23 +338,22 @@ function initScenarioCards() {
   });
 }
 
-// --- Homely Dad Voice (Speech Synthesis) ---
-function speakDadGuide(title, steps) {
+// --- Audio Guide (Speech Synthesis) ---
+function speakGuideSteps(title, steps) {
   if (!('speechSynthesis' in window)) {
     alert('Voice narration is not supported on this browser.');
     return;
   }
   stopSpeaking();
 
-  let script = `Hey beta. Don't worry, let's fix this together. ${title}. `;
+  let script = `${title}. `;
   steps.forEach((s, i) => {
     script += `Step ${i + 1}: ${s.title}. ${s.desc} `;
   });
-  script += "Take your time beta, and stay safe!";
 
   const utterance = new SpeechSynthesisUtterance(script);
-  utterance.rate = 0.88; // Slower, calmer dad cadence
-  utterance.pitch = 0.95; // Slightly deeper, comforting pitch
+  utterance.rate = 0.92;
+  utterance.pitch = 1.0;
   window.speechSynthesis.speak(utterance);
 }
 
@@ -364,7 +363,7 @@ function stopSpeaking() {
   }
 }
 
-// --- AI Diagnostic Chat Engine (Dad Persona) ---
+// --- AI Diagnostic Chat Engine ---
 function initChatBot() {
   const chatForm = document.getElementById('chatForm');
   const userInput = document.getElementById('userInput');
@@ -395,7 +394,7 @@ function initChatBot() {
       appendMessage('bot', reply);
     } catch (err) {
       removeTypingIndicator(typingId);
-      appendMessage('bot', `⚠️ Could not complete diagnostic request: ${err.message}. Don't panic beta, call highway patrol (1033) or emergency (112) right away.`);
+      appendMessage('bot', `⚠️ Could not complete diagnostic request: ${err.message}. If in danger, please call emergency (112) or highway patrol (1033) immediately.`);
     }
   });
 }
@@ -417,12 +416,11 @@ async function queryDiagnosisEngine(query) {
             {
               role: 'system',
               content: (
-                "You are 'Dad' (AutoResQ Roadside Care). You are a loving, calm, highly experienced Indian father figure "
-                + "who knows everything about cars, mechanics, and roadside safety. The user is stranded with a breakdown and stressed or panicked. "
-                + "Always reassure them first with warmth ('Don't worry beta, take a breath, Dad is right here with you'). "
-                + "Give step-by-step, practical DIY checks in homely, simple language with zero complicated mechanic jargon. "
-                + "Use gentle dad humor and caring warnings (e.g. 'Watch your fingers', 'Don't touch that hot radiator cap or your mom will get mad at both of us'). "
-                + "If it's dangerous, strictly order them to stand safely behind the guardrail and call 112 or a tow truck."
+                "You are AutoResQ, a calm, reassuring, and experienced roadside vehicle diagnostic assistant. "
+                + "Stranded drivers are often anxious. Reassure them first ('Take a deep breath, we will get this figured out step-by-step'). "
+                + "Provide clear, concise, step-by-step diagnostic checks and practical DIY fix instructions in simple language without complicated jargon. "
+                + "Always emphasize safety first (hazards, moving off roadway, scald/steam dangers, fire evacuation). "
+                + "If the situation is dangerous, advise them to stand safely behind the guardrail and call 112 or a tow service."
               )
             },
             {
@@ -438,7 +436,7 @@ async function queryDiagnosisEngine(query) {
 
       if (res.ok) {
         const data = await res.json();
-        return data.choices?.[0]?.message?.content || 'Diagnostic check complete. Please inspect carefully, beta.';
+        return data.choices?.[0]?.message?.content || 'Diagnostic check complete. Please inspect carefully.';
       }
     } catch (e) {
       console.warn('Sarvam API call failed, falling back to local emergency engine:', e);
@@ -447,13 +445,13 @@ async function queryDiagnosisEngine(query) {
 
   // Fallback intelligent diagnostic search
   const lower = query.toLowerCase();
-  for (const item of OFFLINE_DAD_DIAGNOSTICS) {
+  for (const item of OFFLINE_DIAGNOSTICS) {
     if (item.triggers.some(t => lower.includes(t))) {
       return item.response;
     }
   }
 
-  return `**"Don't worry beta, let's look at this carefully together."**\n\n1. **First step**: Put on your hazard lights, stay off the road lane, and make sure you're safe.\n2. **Look at the dashboard**: Are there any red or yellow warning symbols blinking?\n3. **Quick check**: Take a look at my top guides above (Flat tire, Dead battery, Overheating, Smoke, Brakes), or tap below so I can locate the nearest mechanics or 24/7 towing services for you!\n\n*(Tip: Add your Sarvam API Key in Settings ⚙️ to connect Dad's deep AI brain!)*`;
+  return `**Emergency Assessment:**\n\n1. **Safety First**: Engage hazard lights, ensure you are in a safe pull-off zone, and keep all passengers behind the guardrail.\n2. **Dashboard Check**: Are there any red (Stop Immediately) or amber (Caution) warning lights illuminated?\n3. **Recommended Action**: Select one of our emergency guides above (Flat Tire, Dead Battery, Overheating, Smoke, Brakes) or tap below to scan nearby mechanics and towing services.\n\n*(Tip: Add your Sarvam API Key in Settings ⚙️ to enable deep AI diagnostics!)*`;
 }
 
 function appendMessage(sender, text) {
@@ -462,13 +460,13 @@ function appendMessage(sender, text) {
   msgDiv.className = `chat-message ${sender}-message`;
   
   const formattedText = formatMarkdown(text);
-  const avatar = sender === 'user' ? '👤' : '👨‍🦳';
+  const avatar = sender === 'user' ? '👤' : '🤖';
 
   msgDiv.innerHTML = `
     <div class="msg-avatar">${avatar}</div>
     <div class="msg-body">
       ${formattedText}
-      ${sender === 'bot' ? `<button class="btn-voice-mini" onclick="speakText(this)" title="Listen to Dad">🔊 Listen to Dad</button>` : ''}
+      ${sender === 'bot' ? `<button class="btn-voice-mini" onclick="speakText(this)" title="Listen to response">🔊 Listen</button>` : ''}
     </div>
   `;
   chatHistory.appendChild(msgDiv);
@@ -485,8 +483,8 @@ function speakText(btn) {
   if ('speechSynthesis' in window) {
     stopSpeaking();
     const u = new SpeechSynthesisUtterance(text);
-    u.rate = 0.88;
-    u.pitch = 0.95;
+    u.rate = 0.95;
+    u.pitch = 1.0;
     window.speechSynthesis.speak(u);
   }
 }
@@ -498,9 +496,9 @@ function appendTypingIndicator() {
   div.id = id;
   div.className = 'chat-message bot-message';
   div.innerHTML = `
-    <div class="msg-avatar">👨‍🦳</div>
-    <div class="msg-body" style="font-style: italic; color: var(--text-secondary);">
-      Dad is checking the car symptoms with Sarvam AI...
+    <div class="msg-avatar">🤖</div>
+    <div class="msg-body" style="font-style: italic; color: var(--text-muted);">
+      Diagnosing vehicle condition with Sarvam AI...
     </div>
   `;
   chatHistory.appendChild(div);
@@ -554,7 +552,7 @@ function initSpeechRecognition() {
     try {
       recognition.start();
       voiceBtn.classList.add('recording');
-      userInput.placeholder = 'Dad is listening... Speak now beta!';
+      userInput.placeholder = 'Listening... Speak your issue now';
       isRecording = true;
     } catch (e) {
       console.warn('Speech recognition start failed:', e);
@@ -569,13 +567,13 @@ function initSpeechRecognition() {
 
   recognition.onerror = () => {
     voiceBtn.classList.remove('recording');
-    userInput.placeholder = 'Tell Dad what happened...';
+    userInput.placeholder = 'Describe what happened...';
     isRecording = false;
   };
 
   recognition.onend = () => {
     voiceBtn.classList.remove('recording');
-    userInput.placeholder = 'Tell Dad what happened...';
+    userInput.placeholder = 'Describe what happened...';
     isRecording = false;
   };
 }
