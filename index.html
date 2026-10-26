@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>AutoResQ — Emergency Car Diagnostics & Roadside Assistant</title>
+  <title>AutoResQ — Dad's Roadside Emergency Care • Powered by Sarvam AI</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,15 +15,19 @@
   <header class="navbar">
     <div class="nav-container">
       <div class="brand">
-        <span class="brand-icon">🚨</span>
+        <div class="traffic-light-mini">
+          <span class="light red"></span>
+          <span class="light yellow"></span>
+          <span class="light green"></span>
+        </div>
         <div class="brand-text">
-          <h1>AutoResQ</h1>
-          <span class="brand-sub">Emergency Car Assistant • Powered by Sarvam AI</span>
+          <h1>AutoResQ <span class="badge-dad">👨‍🦳 Dad's Care</span></h1>
+          <span class="brand-sub">Roadside Emergency Co-Pilot • Powered by Sarvam AI</span>
         </div>
       </div>
       <div class="nav-actions">
         <button id="sosAlertBtn" class="btn btn-sos pulse" title="Trigger Emergency Strobe & Alarm">
-          <span>⚠️</span> SOS Strobe
+          <span>🚨</span> Emergency SOS
         </button>
         <button id="settingsBtn" class="btn btn-icon" title="API Settings">
           ⚙️
@@ -32,15 +36,21 @@
     </div>
   </header>
 
-  <!-- Immediate Safety Alert Bar -->
-  <section class="safety-banner">
+  <!-- Reassuring Dad Advice Banner -->
+  <section class="dad-reassurance-banner">
     <div class="banner-content">
-      <span class="warning-badge">CRITICAL SAFETY FIRST</span>
+      <div class="dad-quote">
+        <span class="dad-emoji">👨‍🦳</span>
+        <div>
+          <strong>"Don't worry beta, take a deep breath. Dad is right here."</strong>
+          <p>Cars can be fixed. You come first. Follow these 4 quick safety steps before touching anything:</p>
+        </div>
+      </div>
       <div class="safety-chips">
-        <span class="chip">1. Hazard Lights ON ⚠️</span>
-        <span class="chip">2. Pull Off Carriageway 🚏</span>
-        <span class="chip">3. Handbrake UP 🅿️</span>
-        <span class="chip">4. Triangle 50m Behind 🔺</span>
+        <span class="chip"><span class="dot red-dot"></span> 1. Hazards ON ⚠️</span>
+        <span class="chip"><span class="dot yellow-dot"></span> 2. Pull Off Road 🚏</span>
+        <span class="chip"><span class="dot green-dot"></span> 3. Handbrake UP 🅿️</span>
+        <span class="chip"><span class="dot yellow-dot"></span> 4. Triangle 50m Back 🔺</span>
       </div>
     </div>
   </section>
@@ -50,61 +60,100 @@
     <!-- Quick Emergency Diagnostic Cards -->
     <section class="quick-scenarios-section">
       <div class="section-header">
-        <h2>What happened to your vehicle?</h2>
-        <p>Select your emergency for instant step-by-step roadside instructions</p>
+        <div class="traffic-badge-row">
+          <span class="traffic-icon">🚦</span>
+          <h2>What's troubling the car, kiddo?</h2>
+        </div>
+        <p>Pick what went wrong below. I'll walk you through fixing it step-by-step!</p>
       </div>
 
       <div class="scenarios-grid">
         <button class="scenario-card" data-issue="puncture">
+          <div class="card-traffic">
+            <span class="tl-dot red active"></span>
+            <span class="tl-dot yellow"></span>
+            <span class="tl-dot green"></span>
+          </div>
           <div class="card-icon">🛞</div>
           <div class="card-info">
+            <div class="tag-row"><span class="badge-tag red-tag">STOP & SWAP</span></div>
             <h3>Flat Tire / Puncture</h3>
-            <p>Spare tire swap, jacking safety & lug pattern</p>
+            <p>Spare tire swap, jacking safety & dad's lug nut trick</p>
           </div>
           <span class="card-arrow">→</span>
         </button>
 
         <button class="scenario-card" data-issue="battery">
+          <div class="card-traffic">
+            <span class="tl-dot red"></span>
+            <span class="tl-dot yellow active"></span>
+            <span class="tl-dot green"></span>
+          </div>
           <div class="card-icon">🔋</div>
           <div class="card-info">
+            <div class="tag-row"><span class="badge-tag yellow-tag">CHECK JUICE</span></div>
             <h3>Won't Start / Dead Battery</h3>
-            <p>Jumpstart sequence, clicking vs dead starter</p>
+            <p>Jumper cable color order & clicking starter check</p>
           </div>
           <span class="card-arrow">→</span>
         </button>
 
         <button class="scenario-card" data-issue="overheat">
+          <div class="card-traffic">
+            <span class="tl-dot red active"></span>
+            <span class="tl-dot yellow"></span>
+            <span class="tl-dot green"></span>
+          </div>
           <div class="card-icon">🌡️</div>
           <div class="card-info">
+            <div class="tag-row"><span class="badge-tag red-tag">DON'T TOUCH CAP</span></div>
             <h3>Engine Overheating / Steam</h3>
-            <p>Safe cooldown, coolant refill & pressure risk</p>
+            <p>Cool-down wait, safe coolant refill & scald warning</p>
           </div>
           <span class="card-arrow">→</span>
         </button>
 
         <button class="scenario-card" data-issue="smoke">
+          <div class="card-traffic">
+            <span class="tl-dot red active"></span>
+            <span class="tl-dot yellow"></span>
+            <span class="tl-dot green"></span>
+          </div>
           <div class="card-icon">🔥</div>
           <div class="card-info">
+            <div class="tag-row"><span class="badge-tag red-tag">EVACUATE FIRST</span></div>
             <h3>Smoke / Burning Smell</h3>
-            <p>Electrical vs oil vs brake smoke, fire safety</p>
+            <p>What the smell means, wire short vs oil & fire safety</p>
           </div>
           <span class="card-arrow">→</span>
         </button>
 
         <button class="scenario-card" data-issue="brakes">
+          <div class="card-traffic">
+            <span class="tl-dot red active"></span>
+            <span class="tl-dot yellow"></span>
+            <span class="tl-dot green"></span>
+          </div>
           <div class="card-icon">🛑</div>
           <div class="card-info">
+            <div class="tag-row"><span class="badge-tag red-tag">CRITICAL</span></div>
             <h3>Brakes Spongy or Failing</h3>
-            <p>Engine braking, pumping & safe deceleration</p>
+            <p>Engine braking, pumping the pedal & gentle handbrake</p>
           </div>
           <span class="card-arrow">→</span>
         </button>
 
         <button class="scenario-card" data-issue="fuel">
+          <div class="card-traffic">
+            <span class="tl-dot red"></span>
+            <span class="tl-dot yellow active"></span>
+            <span class="tl-dot green"></span>
+          </div>
           <div class="card-icon">⛽</div>
           <div class="card-info">
+            <div class="tag-row"><span class="badge-tag blue-tag">EMPTY TANK</span></div>
             <h3>Out of Fuel / Misfire</h3>
-            <p>Coasting safely, priming fuel line & safety</p>
+            <p>Safe shoulder stop, steering stiffness & diesel priming</p>
           </div>
           <span class="card-arrow">→</span>
         </button>
@@ -117,13 +166,16 @@
         <div class="guide-title-box">
           <span id="guideIcon" class="guide-badge-icon">🛞</span>
           <div>
+            <div class="guide-sub-header">
+              <span class="traffic-pill">🚦 Step-by-Step Roadside Fix</span>
+              <span id="guideTime" class="guide-meta">Estimated time: 15-20 min</span>
+            </div>
             <h2 id="guideTitle">Flat Tire Replacement Guide</h2>
-            <span id="guideTime" class="guide-meta">Estimated time: 15-20 min • Difficulty: Easy</span>
           </div>
         </div>
         <div class="guide-controls">
-          <button id="readAloudBtn" class="btn btn-secondary">
-            🔊 Listen to Steps
+          <button id="readAloudBtn" class="btn btn-dad-voice">
+            🔊 Listen to Dad's Voice
           </button>
           <button id="closeGuideBtn" class="btn btn-text">✕ Close</button>
         </div>
@@ -134,40 +186,44 @@
       </div>
     </section>
 
-    <!-- AI Diagnostic Chat Section (Sarvam 105B) -->
+    <!-- AI Diagnostic Chat Section (Dad Persona + Sarvam 105B) -->
     <section class="ai-chat-section">
       <div class="section-header ai-header">
         <div class="ai-title-wrap">
-          <div class="pulse-indicator"></div>
-          <h2>Sarvam AI Emergency Diagnostic Chat</h2>
+          <div class="traffic-light-mini">
+            <span class="light red"></span>
+            <span class="light yellow"></span>
+            <span class="light green"></span>
+          </div>
+          <h2>Ask Dad: Sarvam AI Diagnostic Chat</h2>
         </div>
-        <p>Describe what you hear, see, or smell. Speaks English & Indian languages.</p>
+        <p>Type or speak what you hear, smell, or see. Speaks English, Hindi, and Indian regional languages!</p>
       </div>
 
       <div class="chat-container">
         <div id="chatHistory" class="chat-history">
           <div class="chat-message bot-message">
-            <div class="msg-avatar">🤖</div>
+            <div class="msg-avatar">👨‍🦳</div>
             <div class="msg-body">
-              <p><strong>AutoResQ AI Diagnostic Bot ready.</strong></p>
-              <p>Tell me what happened with your car (e.g., <em>"The car won't crank and makes a rapid clicking sound"</em> or <em>"Acrid smell and smoke coming from under the dashboard"</em>). I'll guide you step-by-step!</p>
+              <p><strong>"Hey beta, don't worry at all! Dad's got your back."</strong></p>
+              <p>Tell me what happened with the car — is there a strange noise, a warning light on the dashboard, or did it shut down suddenly? Tap the microphone or click one of the common issues below:</p>
               <div class="quick-chips">
-                <button class="chip-btn" data-text="My car suddenly shut down while driving and won't restart">Car died while driving</button>
-                <button class="chip-btn" data-text="Steering wheel vibrates heavily and car pulls strongly to the left">Steering pulls & vibrates</button>
-                <button class="chip-btn" data-text="Key turns but starter makes rapid clicking noise and lights dim">Rapid clicking on start</button>
-                <button class="chip-btn" data-text="Sweet syrupy smell and temperature gauge is in the red">Temperature gauge in RED</button>
+                <button class="chip-btn" data-text="Car suddenly shut off while driving and won't restart">Car died while driving</button>
+                <button class="chip-btn" data-text="Key turns and starter makes a rapid click-click-click sound">Rapid clicking on start</button>
+                <button class="chip-btn" data-text="Steering wheel shakes heavily and car pulls hard to one side">Steering pulls & vibrates</button>
+                <button class="chip-btn" data-text="White sweet-smelling steam coming from front hood">Steam coming from hood</button>
               </div>
             </div>
           </div>
         </div>
 
         <form id="chatForm" class="chat-input-bar">
-          <button type="button" id="voiceInputBtn" class="btn-voice" title="Speak your issue (Voice Input)">
-            🎤
+          <button type="button" id="voiceInputBtn" class="btn-voice" title="Speak to Dad (Voice Input)">
+            🎙️
           </button>
-          <input type="text" id="userInput" placeholder="Describe the issue with your car..." autocomplete="off">
+          <input type="text" id="userInput" placeholder="Tell Dad what happened (e.g. 'engine is making a rattling noise')..." autocomplete="off">
           <button type="submit" id="sendBtn" class="btn btn-primary">
-            <span>Send</span> ➤
+            <span>Ask Dad</span> ➤
           </button>
         </form>
       </div>
@@ -176,16 +232,19 @@
     <!-- Nearby Emergency Services & Mechanics -->
     <section class="nearby-section">
       <div class="section-header">
-        <h2>Nearby Help & Towing Services</h2>
-        <p>Detect your GPS position to find immediate roadside assistance around you</p>
+        <div class="traffic-badge-row">
+          <span class="traffic-icon">🚦</span>
+          <h2>Nearby Help & Towing Radar</h2>
+        </div>
+        <p>Let's scan your live location so you know exactly who can help you nearby</p>
       </div>
 
       <div class="location-banner">
         <div class="location-status">
           <span class="loc-icon">📍</span>
           <div>
-            <span id="locStatusText" class="loc-title">Location: Detecting...</span>
-            <span id="locCoordsText" class="loc-sub">Tap button below to scan your surroundings</span>
+            <span id="locStatusText" class="loc-title">Location: Detecting your surroundings...</span>
+            <span id="locCoordsText" class="loc-sub">Tap button to pinpoint exact GPS coordinates</span>
           </div>
         </div>
         <button id="detectLocBtn" class="btn btn-secondary">
@@ -195,33 +254,37 @@
 
       <div class="services-grid">
         <a id="linkMechanic" href="https://www.google.com/maps/search/car+repair+mechanic+near+me" target="_blank" rel="noopener" class="service-card">
+          <div class="card-traffic-pill"><span class="dot green-dot"></span> Open</div>
           <div class="service-icon">🔧</div>
           <div class="service-details">
             <h3>Car Mechanics & Garages</h3>
-            <p>Find closest automobile workshops</p>
+            <p>Find the closest repair workshops</p>
           </div>
           <span class="service-badge">Find Near Me ↗</span>
         </a>
 
         <a id="linkPuncture" href="https://www.google.com/maps/search/car+tire+puncture+repair+near+me" target="_blank" rel="noopener" class="service-card">
+          <div class="card-traffic-pill"><span class="dot yellow-dot"></span> Puncture</div>
           <div class="service-icon">🛞</div>
           <div class="service-details">
             <h3>Tire Puncture Shops</h3>
-            <p>24/7 puncture repair and air pressure</p>
+            <p>24/7 tire patching and air filling</p>
           </div>
           <span class="service-badge">Find Near Me ↗</span>
         </a>
 
         <a id="linkTow" href="https://www.google.com/maps/search/tow+truck+roadside+assistance+near+me" target="_blank" rel="noopener" class="service-card">
+          <div class="card-traffic-pill"><span class="dot red-dot"></span> 24/7 RSA</div>
           <div class="service-icon">🚛</div>
           <div class="service-details">
-            <h3>Tow Trucks & RSA</h3>
-            <p>Flatbed towing and breakdown recovery</p>
+            <h3>Tow Trucks & Recovery</h3>
+            <p>Flatbed towing and breakdown pickup</p>
           </div>
           <span class="service-badge">Find Near Me ↗</span>
         </a>
 
         <a id="linkFuel" href="https://www.google.com/maps/search/petrol+pump+gas+station+near+me" target="_blank" rel="noopener" class="service-card">
+          <div class="card-traffic-pill"><span class="dot green-dot"></span> Fuel</div>
           <div class="service-icon">⛽</div>
           <div class="service-details">
             <h3>Petrol / Diesel Pumps</h3>
@@ -233,19 +296,28 @@
 
       <!-- Quick Emergency Hotline Dials -->
       <div class="emergency-contacts">
-        <h3>Emergency Helplines</h3>
+        <h3>Emergency Helpline Speed Dials</h3>
         <div class="contacts-row">
           <a href="tel:112" class="contact-btn">
-            <span class="c-num">112</span>
-            <span class="c-label">National Emergency (All India)</span>
+            <span class="c-traffic">🚨</span>
+            <div class="c-info">
+              <span class="c-num">112</span>
+              <span class="c-label">National Emergency (All India Police/Ambulance)</span>
+            </div>
           </a>
           <a href="tel:1033" class="contact-btn">
-            <span class="c-num">1033</span>
-            <span class="c-label">National Highway Authority Helpline</span>
+            <span class="c-traffic">🛣️</span>
+            <div class="c-info">
+              <span class="c-num">1033</span>
+              <span class="c-label">National Highway Authority (NHAI Roadside Help)</span>
+            </div>
           </a>
           <a href="tel:1073" class="contact-btn">
-            <span class="c-num">1073</span>
-            <span class="c-label">Road Accident Emergency</span>
+            <span class="c-traffic">🏥</span>
+            <div class="c-info">
+              <span class="c-num">1073</span>
+              <span class="c-label">Road Accident Emergency Helpline</span>
+            </div>
           </a>
         </div>
       </div>
@@ -274,7 +346,7 @@
         <button id="closeSettingsBtn" class="btn-close">✕</button>
       </div>
       <div class="modal-body">
-        <p>Enter your <strong>Sarvam AI API Key</strong> to connect to the <code>sarvam-105b-conversations</code> model for dynamic diagnosis. Your key is stored securely in your browser's <code>localStorage</code> and never sent to any third party.</p>
+        <p>Enter your <strong>Sarvam AI API Key</strong> to connect Dad's Brain to the <code>sarvam-105b-conversations</code> model. Key is kept private in your browser's <code>localStorage</code>.</p>
         
         <div class="form-group">
           <label for="apiKeyInput">Sarvam API Key:</label>
@@ -284,7 +356,7 @@
         <div class="form-group">
           <label for="modelSelect">Language Model:</label>
           <select id="modelSelect" class="input-text">
-            <option value="sarvam-105b-conversations">sarvam-105b-conversations (High Capability)</option>
+            <option value="sarvam-105b-conversations">sarvam-105b-conversations (Flagship)</option>
             <option value="sarvam-m">sarvam-m</option>
             <option value="sarvam-2b">sarvam-2b (Fast)</option>
           </select>
@@ -302,8 +374,8 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
-      <p>AutoResQ Roadside Emergency Assistant • Built with Sarvam AI</p>
-      <p class="disclaimer">Disclaimer: In life-threatening emergencies, dial 112 or highway patrol immediately. Always ensure safety before attempting roadside repairs.</p>
+      <p>AutoResQ • Dad's Roadside Emergency Care • Powered by Sarvam AI</p>
+      <p class="disclaimer">Remember beta: always stay off the highway lanes, keep your hazard lights blinking, and call 112 or 1033 if you feel unsafe.</p>
     </div>
   </footer>
 
